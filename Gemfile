@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
-ruby "1.9.3"
+ruby '1.9.3'
 
 gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+# Use PostgreSQL as database
 gem 'pg'
 
 
@@ -20,6 +21,13 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
+
+# Use Devise for authentication
+gem 'devise', '~> 2.1.2'
+# Use single sign-on with devise
+# check: http://rubydoc.info/gems/devise_openid_authenticatable/1.1.1/frames
+# gem 'devise_openid_authenticatable', '~> 1.1.1'
+
 
 gem 'jquery-rails'
 
