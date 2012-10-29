@@ -51,6 +51,9 @@ Globabble::Application.configure do
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
 
+  # Configure mailer for Devise
+  config.action_mailer.default_url_options = { :host => 'www.globabble.com' }
+
   # Enable threaded mode
   # config.threadsafe!
 
