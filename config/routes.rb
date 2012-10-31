@@ -1,4 +1,6 @@
 Globabble::Application.routes.draw do
+  resources :places
+
   resources :blogs
 
   # The priority is based upon order of creation:
